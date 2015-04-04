@@ -1,13 +1,11 @@
 package mpe2015;
 
 import java.io.File;
-import java.net.UnknownHostException;
 
-
+import processing.core.PApplet;
 // XML parser library includes
 import xmlcomponents.Jocument;
 import xmlcomponents.Jode;
-import processing.core.PApplet;
 
 /**
  * An object that encapsulates the configuration context of the display system.

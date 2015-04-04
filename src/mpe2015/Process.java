@@ -1,12 +1,9 @@
 package mpe2015;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.PrintWriter;
 import java.lang.ProcessBuilder.Redirect;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,16 +13,11 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-
-
-
-
-
-
 //we need to access processing from this class
-import processing.core.*;
+import processing.core.PApplet;
 //import processing.event.KeyEvent;
 //import processing.event.MouseEvent;
+import processing.core.PConstants;
 
 /**
  * This class facilitates the execution of multiple Processing applications across a distributed environment.
