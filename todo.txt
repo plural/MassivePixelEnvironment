@@ -1,0 +1,2 @@
+- change the distribution to have a build template, but no proper build file.  Force the user to set it up with system-specific settings.
+- update this for the proper processing library configuration so it can be published and added via the IDE.
