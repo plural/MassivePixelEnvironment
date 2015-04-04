@@ -1,4 +1,4 @@
-package mpe;
+package mpe2015;
 
 /**
  * Used as a shared object to determine whether all connected processes are ready to render.
