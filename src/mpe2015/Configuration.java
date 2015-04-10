@@ -77,9 +77,11 @@ public class Configuration {
 		// my DISPLAY identifier
 		display_ = System.getenv("DISPLAY");
 		
-		if(System.getenv("RANK") != null)
+		if(System.getenv("RANK") != null) {
 			rank_ = Integer.valueOf(System.getenv("RANK"));
-		else rank_ = -1; // head node in auto-start
+		} else {
+		  rank_ = -1; // head node in auto-start
+		}
 		
 		System.out.println("loading XML configuration node");
 		Jode config = root.single("configuration");
@@ -96,7 +98,8 @@ public class Configuration {
 		System.out.println("loading XML dimensions node, debug");
 		debug_ = Integer.parseInt(dimensions.attribute("debug").v) == 1;
 		
-		numFollowers_ = config.children().getLength() - 3;
+		
+		numFollowers_ = config.children("process").size();
 		System.out.println("numFollowers_ = " + numFollowers_);
 		System.out.println("loading XML dimensions node, head");
 		Jode head = config.first("head");
